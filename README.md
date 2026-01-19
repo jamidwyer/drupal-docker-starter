@@ -1,8 +1,6 @@
-# Drupal Docker Starter (Postgres)
+# Drupal Docker Starter
 
 Docker Compose + Postgres + Nginx + PHP-FPM.
-
-This repo does **not** commit secrets or production data. Use env files.
 
 ## One-time: create the Drupal codebase
 
@@ -31,28 +29,61 @@ Then open: http://localhost:8080
 
 Admin creds (dev default): `admin` / `admin`
 
-## Optional starter kit: Hord schema
+## Optional modules
 
-Enables these content types:
+Enable these content types:
+
+### Organization
+
 - Service
 - Organization
+
+### Food
+
 - Product
 - Ingredient
 - Inventory
 - Quantity
 - Quantitative Unit
 
-Also creates a taxonomy vocabulary:
-- Tag
+### Incident
 
-Enable it after install:
+### Person
+
+- Hair color (`field_hair_color`)
+- Eye color (`field_eye_color`)
+- Skin color (`field_skin_color`)
+
+Enable:
 
 ```bash
-docker compose exec php vendor/bin/drush en hord_schema -y
+drush en person_schema -y
 ```
 
 Or set this in your env file:
 
 ```
-STARTER_KITS=hord_schema
+ENABLED_MODULES=organization_schema,food_schema,incident_schema,person_schema
+```
+
+## TODO
+
+- make sure person content type has name field
+- make sure incident content type has an array of persons, description, location, reporter (a person) and datetime fields. everything optional except time and location
+- make sure content types have right fields
+- make sure content types have right relationships
+- login header
+- use the starter to make an incident report project
+- present incident content type as REST
+- use the starter to make a service list project
+- use the starter to make a food inventory project
+- make a react frontend that lists a content type
+- search a content type
+- move drupal to its own repo
+- move react to its own repo
+- add business content type with address, name, tag, fields
+- provide graphql option
+
+```
+
 ```
