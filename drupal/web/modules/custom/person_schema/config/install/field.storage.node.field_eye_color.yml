@@ -1,0 +1,21 @@
+uuid: 1c7427fb-75cc-4d58-8ad5-0e2c9af3f600
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_eye_color
+field_name: field_eye_color
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

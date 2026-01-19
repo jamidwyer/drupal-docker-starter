@@ -1,0 +1,21 @@
+uuid: 7c8f1f7c-8d9d-47a7-9b6f-f6c7b58679bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_skin_color
+field_name: field_skin_color
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+name: Person Schema
+type: module
+description: Optional schema for a Person content type.
+core_version_requirement: ^10 || ^11
+package: Starter Schema
+dependencies:
+  - node:node
+  - text:text

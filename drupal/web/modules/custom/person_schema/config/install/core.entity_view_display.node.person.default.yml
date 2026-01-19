@@ -1,0 +1,38 @@
+uuid: 1d6d0ce9-3a29-4aaf-b8cf-112d4db7a7a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.person.field_eye_color
+    - field.field.node.person.field_hair_color
+    - field.field.node.person.field_skin_color
+    - node.type.person
+  module:
+    - text
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  field_hair_color:
+    label: above
+    type: string
+    weight: 0
+    region: content
+  field_eye_color:
+    label: above
+    type: string
+    weight: 1
+    region: content
+  field_skin_color:
+    label: above
+    type: string
+    weight: 2
+    region: content
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    region: content
+hidden:
+  links: true
