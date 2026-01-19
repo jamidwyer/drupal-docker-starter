@@ -1,0 +1,19 @@
+uuid: 8d6f4d66-6f69-4ac2-9c2b-015d5f47e4cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_reporter
+field_name: field_reporter
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

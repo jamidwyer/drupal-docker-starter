@@ -1,0 +1,24 @@
+uuid: 4b9bdf03-3c6d-4c5c-bb86-6a74b5f1d9b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reporter
+    - node.type.incident
+    - node.type.person
+id: node.incident.field_reporter
+field_name: field_reporter
+entity_type: node
+bundle: incident
+label: Reporter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+field_type: entity_reference

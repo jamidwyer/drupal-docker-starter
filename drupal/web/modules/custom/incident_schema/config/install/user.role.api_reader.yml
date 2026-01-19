@@ -1,0 +1,11 @@
+uuid: 8a204dc8-09b8-49aa-a9f2-5ff2c94b8bf9
+langcode: en
+status: true
+dependencies: {  }
+id: api_reader
+label: 'API Reader'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'restful get entity:node'

@@ -1,0 +1,11 @@
+uuid: 0b9ebf75-8b46-4a7a-b559-0b0c2f443e75
+langcode: en
+status: true
+dependencies: {  }
+name: Incident
+type: incident
+description: 'An incident report.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
