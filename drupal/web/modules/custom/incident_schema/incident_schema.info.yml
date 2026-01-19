@@ -1,12 +1,10 @@
 name: Incident Schema
 type: module
-description: Optional schema for an Incident content type (with Person references).
+description: Optional schema for Incident content type (with Person references) and REST defaults.
 core_version_requirement: ^10 || ^11
 package: Starter Schema
 dependencies:
-  - node:node
-  - text:text
-  - datetime:datetime
+  - drupal:node
+  - drupal:rest
+  - drupal:serialization
   - person_schema:person_schema
-  - rest:rest
-  - serialization:serialization

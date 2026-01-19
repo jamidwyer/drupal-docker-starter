@@ -1,4 +1,4 @@
-uuid: 8c3f1d31-7c9a-4d0b-9b2a-5c9b53a7d9c7
+uuid: 79a29dbe-d89c-4ba8-ae18-e50e9fcadd83
 langcode: en
 status: true
 dependencies:
@@ -21,4 +21,8 @@ settings:
   handler_settings:
     target_bundles:
       person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

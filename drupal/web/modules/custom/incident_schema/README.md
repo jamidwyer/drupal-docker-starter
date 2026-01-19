@@ -1,27 +1,29 @@
-# Incident Schema
+# incident_schema
 
-Provides an optional **Incident** content type for the starterpack.
+Optional schema module that adds an **Incident** content type and REST defaults.
 
-## Installs
-- Content type: `incident`
+## What it installs
+
+- Content type: `Incident` (`incident`)
 - Fields:
-  - **Required**
-    - `field_incident_time` (datetime)
-    - `field_location` (text)
-  - Optional
-    - `body` (description)
-    - `field_reporter` (entity reference → Person, single)
-    - `field_persons` (entity reference → Person, unlimited)
+  - Required:
+    - `field_incident_time` (Datetime)
+    - `field_location` (Text)
+  - Optional:
+    - `body` (Description)
+    - `field_reporter` (Entity reference → `person`)
+    - `field_persons` (Entity reference → `person`, unlimited)
 
-## REST (core)
-This module enables a basic core REST resource for nodes (`entity:node`) using JSON serialization and cookie auth.
-It also adds two optional roles:
-- `api_reader` (GET via REST)
-- `api_writer` (GET/POST via REST + create content)
+## Dependencies
 
-Assign roles to users as needed.
+- `person_schema` (provides the `person` content type used by references)
+- Core: `rest`, `serialization`
 
-## Enable
-```bash
-drush en incident_schema -y
-```
+## REST defaults
+
+Installs REST config for the core `entity:node` resource (GET/POST, JSON, cookie auth) and adds two roles:
+
+- `api_reader` (read via REST)
+- `api_writer` (read + create incidents via REST)
+
+> Cookie auth is suitable for same-origin/session-based API calls. If you later use Auth0 Bearer tokens, you'll add a JWT/OIDC auth provider and adjust REST authentication accordingly.

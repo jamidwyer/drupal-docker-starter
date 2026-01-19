@@ -1,10 +1,11 @@
-uuid: 9a6e1f1e-1f02-40e8-8b90-54f2a3d6ffef
+uuid: 1a862756-f520-4829-b3b8-f632cf389435
 langcode: en
 status: true
 dependencies:
   module:
     - rest
     - serialization
+    - user
 id: entity.node
 plugin_id: 'entity:node'
 granularity: resource
