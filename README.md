@@ -50,11 +50,16 @@ Enable these content types:
 
 ### Person
 
+- Given name
+- Family name
+- Outfit
 - Hair color (`field_hair_color`)
 - Eye color (`field_eye_color`)
 - Skin color (`field_skin_color`)
 
-Enable:
+### Outfit
+
+Enable a module like:
 
 ```bash
 drush en person_schema -y
@@ -68,7 +73,8 @@ ENABLED_MODULES=organization_schema,food_schema,incident_schema,person_schema
 
 ## TODO
 
-- make sure person content type has name field
+- add postalAddress content type
+- add location content type
 - make sure incident content type has an array of persons, description, location, reporter (a person) and datetime fields. everything optional except time and location
 - make sure content types have right fields
 - make sure content types have right relationships
@@ -81,6 +87,8 @@ ENABLED_MODULES=organization_schema,food_schema,incident_schema,person_schema
 - search a content type
 - move drupal to its own repo
 - move react to its own repo
+- add election content type
+- add candidate content type
 - add business content type with address, name, tag, fields
 - provide graphql option
 

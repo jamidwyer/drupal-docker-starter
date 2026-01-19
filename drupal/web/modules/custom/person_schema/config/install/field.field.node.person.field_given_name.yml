@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - node.type.person
-    - field.storage.node.field_hair_color
-id: node.person.field_hair_color
-field_name: field_hair_color
+    - field.storage.node.field_given_name
+id: node.person.field_given_name
+field_name: field_given_name
 entity_type: node
 bundle: person
-label: Field Hair Color
+label: Field Given Name
 required: false
 settings: { }
 field_type: string

@@ -1,38 +1,67 @@
-uuid: 1d6d0ce9-3a29-4aaf-b8cf-112d4db7a7a7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.person.field_eye_color
-    - field.field.node.person.field_hair_color
-    - field.field.node.person.field_skin_color
     - node.type.person
-  module:
-    - text
 id: node.person.default
 targetEntityType: node
 bundle: person
 mode: default
 content:
-  field_hair_color:
-    label: above
+  field_given_name:
     type: string
+    label: above
     weight: 0
     region: content
-  field_eye_color:
-    label: above
+    settings:
+      { }
+    third_party_settings: { }
+  field_family_name:
     type: string
+    label: above
     weight: 1
     region: content
-  field_skin_color:
-    label: above
+    settings:
+      { }
+    third_party_settings: { }
+  field_employed_by:
     type: string
+    label: above
     weight: 2
     region: content
-  body:
-    label: hidden
-    type: text_default
+    settings:
+      { }
+    third_party_settings: { }
+  field_hair_color:
+    type: string
+    label: above
     weight: 3
     region: content
-hidden:
-  links: true
+    settings:
+      { }
+    third_party_settings: { }
+  field_eye_color:
+    type: string
+    label: above
+    weight: 4
+    region: content
+    settings:
+      { }
+    third_party_settings: { }
+  field_skin_color:
+    type: string
+    label: above
+    weight: 5
+    region: content
+    settings:
+      { }
+    third_party_settings: { }
+  field_outfit:
+    type: entity_reference_label
+    label: above
+    weight: 6
+    region: content
+    settings:
+      link: false
+    third_party_settings: { }
+hidden: { }
