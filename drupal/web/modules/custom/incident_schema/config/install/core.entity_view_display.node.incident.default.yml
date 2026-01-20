@@ -19,8 +19,8 @@ content:
   field_incident_time:
     type: datetime_default
     label: above
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     weight: 0
     region: content
   field_place:
@@ -28,21 +28,21 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: 1
     region: content
   field_description:
     type: text_default
     label: above
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     weight: 2
     region: content
   body:
     type: text_default
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     weight: 3
     region: content
   field_reporter:
@@ -50,7 +50,7 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: 4
     region: content
   field_persons:
@@ -58,7 +58,7 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: 5
     region: content
 hidden:
