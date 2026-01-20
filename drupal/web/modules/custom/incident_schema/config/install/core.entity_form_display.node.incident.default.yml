@@ -1,15 +1,16 @@
-uuid: 84b638c2-d633-4a8d-9c0d-749ec16986a0
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.incident.field_description
     - field.field.node.incident.field_incident_time
-    - field.field.node.incident.field_location
     - field.field.node.incident.field_persons
+    - field.field.node.incident.field_place
     - field.field.node.incident.field_reporter
     - node.type.incident
   module:
     - datetime
+    - text
 id: node.incident.default
 targetEntityType: node
 bundle: incident
@@ -29,17 +30,27 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_location:
-    type: string_textfield
+  field_place:
+    type: entity_reference_autocomplete
     weight: 1
     region: content
     settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   body:
     type: text_textarea
-    weight: 2
+    weight: 3
     region: content
     settings:
       rows: 9
@@ -47,7 +58,7 @@ content:
     third_party_settings: {  }
   field_reporter:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -57,7 +68,7 @@ content:
     third_party_settings: {  }
   field_persons:
     type: entity_reference_autocomplete_tags
-    weight: 4
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS

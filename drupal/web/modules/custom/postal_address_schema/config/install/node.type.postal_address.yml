@@ -1,10 +1,10 @@
 langcode: en
 status: true
-dependencies: { }
+dependencies: {}
 name: Postal Address
 type: postal_address
 description: A Postal Address content type for schema.org PostalAddress.
-help: ''
+help: ""
 new_revision: false
 preview_mode: 1
 display_submitted: false

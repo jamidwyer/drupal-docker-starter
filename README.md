@@ -57,6 +57,20 @@ Enable these content types:
 - Eye color (`field_eye_color`)
 - Skin color (`field_skin_color`)
 
+### Postal Address
+
+- Country (`field_address_country`)
+- Locality (`field_address_locality`)
+- Region (`field_address_region`)
+- Postal Code (`field_postal_code`)
+- Street Address (`field_street_address`)
+
+### Place
+
+- Address (reference to Postal Address)
+- Latitude (`field_latitude`)
+- Longitude (`field_longitude`)
+
 ### Outfit
 
 Enable a module like:
@@ -68,16 +82,12 @@ drush en person_schema -y
 Or set this in your env file:
 
 ```
-ENABLED_MODULES=organization_schema,food_schema,incident_schema,person_schema
+ENABLED_MODULES=organization_schema,food_schema,incident_schema,person_schema,postal_address_schema,place_schema
 ```
 
 ## TODO
 
-- add postalAddress content type
-- add location content type
 - make sure incident content type has an array of persons, description, location, reporter (a person) and datetime fields. everything optional except time and location
-- make sure content types have right fields
-- make sure content types have right relationships
 - login header
 - use the starter to make an incident report project
 - present incident content type as REST
@@ -89,9 +99,8 @@ ENABLED_MODULES=organization_schema,food_schema,incident_schema,person_schema
 - move react to its own repo
 - add election content type
 - add candidate content type
+- add recipe content type
+- add ingredient content type
+- add nutrition content type
 - add business content type with address, name, tag, fields
 - provide graphql option
-
-```
-
-```

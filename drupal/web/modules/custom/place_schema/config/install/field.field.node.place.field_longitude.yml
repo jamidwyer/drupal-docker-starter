@@ -11,6 +11,6 @@ bundle: place
 label: Longitude
 required: false
 settings:
-  min: '-180.00000000'
-  max: '180.00000000'
+  min: "-180.00000000"
+  max: "180.00000000"
 field_type: decimal

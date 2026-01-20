@@ -11,7 +11,7 @@ bundle: place
 label: Address
 required: false
 settings:
-  handler: 'default:node'
+  handler: "default:node"
   handler_settings:
     target_bundles:
       postal_address: postal_address

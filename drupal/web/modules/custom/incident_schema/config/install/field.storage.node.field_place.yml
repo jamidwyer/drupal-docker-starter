@@ -1,17 +1,14 @@
-uuid: 737f33d4-5484-4a3b-b1a7-4902968ef94a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_location
-field_name: field_location
+id: node.field_place
+field_name: field_place
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: node
 module: core
 locked: false
 cardinality: 1

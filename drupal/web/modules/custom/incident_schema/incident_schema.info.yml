@@ -7,4 +7,6 @@ dependencies:
   - drupal:node
   - drupal:rest
   - drupal:serialization
+  - drupal:text
   - person_schema:person_schema
+  - place_schema:place_schema

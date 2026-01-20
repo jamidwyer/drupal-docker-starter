@@ -15,27 +15,27 @@ content:
     region: content
     settings:
       link: true
-    third_party_settings: { }
+    third_party_settings: {}
   field_latitude:
     type: number_decimal
     label: above
     weight: 1
     region: content
     settings:
-      thousand_separator: ''
+      thousand_separator: ""
       decimal_separator: .
       scale: 8
       prefix_suffix: true
-    third_party_settings: { }
+    third_party_settings: {}
   field_longitude:
     type: number_decimal
     label: above
     weight: 2
     region: content
     settings:
-      thousand_separator: ''
+      thousand_separator: ""
       decimal_separator: .
       scale: 8
       prefix_suffix: true
-    third_party_settings: { }
-hidden: { }
+    third_party_settings: {}
+hidden: {}
