@@ -13,4 +13,3 @@ dependencies:
   - drupal:user
   - drupal:serialization
   - drupal:rest
-  - drupal:jsonapi
