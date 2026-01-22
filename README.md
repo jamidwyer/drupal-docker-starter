@@ -2,17 +2,6 @@
 
 Docker Compose + Postgres + Nginx + PHP-FPM.
 
-## One-time: create the Drupal codebase
-
-From the repo root:
-
-```bash
-composer create-project drupal/recommended-project drupal
-cd drupal
-composer require drush/drush
-cd ..
-```
-
 ## Create your env file
 
 ```bash
