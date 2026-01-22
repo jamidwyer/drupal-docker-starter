@@ -20,7 +20,7 @@ if ! docker compose exec -T php test -f web/sites/default/settings.php; then
 fi
 
 # -----------------------------------------------------------------------------
-# Optional "starter kits"
+# Optional enabled modules
 #
 # You can enable optional modules via an env var:
 #
