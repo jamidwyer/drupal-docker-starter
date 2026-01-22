@@ -6,6 +6,6 @@ dependencies:
     - migrate_plus
 id: organization_schema
 label: Organization Schema Imports
-description: CSV imports for agencies and services
+description: CSV imports for organizations
 source_type: CSV
-shared_configuration: { }
+shared_configuration: {}
