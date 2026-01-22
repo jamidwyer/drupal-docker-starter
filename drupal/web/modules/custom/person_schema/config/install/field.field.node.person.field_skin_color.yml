@@ -8,7 +8,7 @@ id: node.person.field_skin_color
 field_name: field_skin_color
 entity_type: node
 bundle: person
-label: Field Skin Color
+label: Skin Color
 required: false
-settings: { }
+settings: {}
 field_type: string
