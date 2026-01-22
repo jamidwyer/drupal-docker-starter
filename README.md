@@ -20,12 +20,12 @@ Admin creds (dev default): `admin` / `admin`
 
 ## Optional modules
 
-Enable these content types:
+You can enable these content types by adding their name to env.local:
 
 ### Organization
 
 - Service
-- Organization
+- Name
 
 ### Food
 
