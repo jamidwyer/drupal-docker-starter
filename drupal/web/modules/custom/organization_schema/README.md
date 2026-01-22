@@ -1,10 +1,14 @@
 # Organization Schema
 
-Optional schema for an organization/service directory.
+Optional schema for an organization directory.
 
 ## Includes
 
-- Content types: Organization, Service
+- Content types: Organization
+- Fields:
+  - Name (`field_name`) - required text field
+  - Abbreviation (`field_abbreviation`) - optional text field
+  - External ID (`field_external_id`) - optional text field
+  - Services (`field_services`) - array of service references
 - Relationships
-  - Service → Organization (`field_organization`)
-  - Organization/Service → Tag (`field_tags`)
+  - Organization → Service (`field_services`)

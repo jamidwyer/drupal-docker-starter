@@ -1,6 +1,6 @@
 name: Organization Schema
 type: module
-description: Optional schema for Organizations, Services, and Tags (taxonomy).
+description: Optional schema for Organizations content type.
 core_version_requirement: ^10 || ^11
 package: Starter Schema
 dependencies:
