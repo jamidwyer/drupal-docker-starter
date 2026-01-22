@@ -48,6 +48,13 @@ Enable these content types:
 
 ### Incident
 
+- Incident time (required)
+- Place (required)
+- Description (optional)
+- Reporter (optional person)
+- Persons (array of persons)
+- Photos (`field_photos`, array, optional)
+
 ### Person
 
 - Given name
@@ -56,6 +63,7 @@ Enable these content types:
 - Hair color (`field_hair_color`)
 - Eye color (`field_eye_color`)
 - Skin color (`field_skin_color`)
+- Photos (`field_photos`, array)
 
 ### Postal Address
 
@@ -87,9 +95,9 @@ ENABLED_MODULES=organization_schema,food_schema,incident_schema,person_schema,po
 
 ## TODO
 
-- make sure incident content type has an array of persons, description, location, reporter (a person) and datetime fields. everything optional except time and location
-- login header
+- make sure person, incident, address, and location enable and show expected fields
 - use the starter to make an incident report project
+- login header
 - present incident content type as REST
 - use the starter to make a service list project
 - use the starter to make a food inventory project
@@ -97,6 +105,7 @@ ENABLED_MODULES=organization_schema,food_schema,incident_schema,person_schema,po
 - search a content type
 - move drupal to its own repo
 - move react to its own repo
+- add videos to incident
 - add election content type
 - add candidate content type
 - add recipe content type

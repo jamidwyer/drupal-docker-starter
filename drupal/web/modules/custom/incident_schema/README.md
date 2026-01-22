@@ -14,12 +14,13 @@ Optional schema module that adds an **Incident** content type and REST defaults.
     - `body` (Description)
     - `field_reporter` (Entity reference → `person`)
     - `field_persons` (Entity reference → `person`, unlimited)
+    - `field_photos` (Image, unlimited)
 
 ## Dependencies
 
-- `person_schema` (provides the `person` content type used by references)
-- `place_schema` (provides the `place` content type used by references)
-- Core: `rest`, `serialization`, `text`
+- `person_schema` (provides the `person` content type used by references and the `field_photos` field storage)
+- `place_schema` (provides the `place` content type used by references and the `field_place` field storage)
+- Core: `rest`, `serialization`, `text`, `image`
 
 ## REST defaults
 

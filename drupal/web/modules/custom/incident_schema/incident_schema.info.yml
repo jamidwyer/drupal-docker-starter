@@ -4,6 +4,7 @@ description: Optional schema for Incident content type (with Person references) 
 core_version_requirement: ^10 || ^11
 package: Starter Schema
 dependencies:
+  - drupal:image
   - drupal:node
   - drupal:rest
   - drupal:serialization
